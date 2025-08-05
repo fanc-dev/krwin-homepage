@@ -1,0 +1,301 @@
+{
+  "notFound": {
+    "title": "페이지를 찾을 수 없습니다",
+    "subtitle": "페이지를 찾을 수 없습니다",
+    "description": "요청하신 페이지가 존재하지 않거나 이동되었을 수 있습니다.",
+    "homeButton": "홈으로 돌아가기",
+    "backButton": "이전 페이지로",
+    "frequentlyVisited": "자주 찾는 페이지",
+    "about": "KRWIN 소개",
+    "transparency": "재무"
+  },
+  "header": {
+    "about": "About",
+    "transparency": "Transparency",
+    "technology": "Technology",
+    "contactUs": "Contact Us",
+    "languageSelection": "언어 선택",
+    "menuOpen": "메뉴 열기",
+    "menuClose": "메뉴 닫기"
+  },
+  "navigation": {
+    "home": "홈",
+    "about": "회사 소개",
+    "transparency": "투명성",
+    "technology": "기술",
+    "partners": "파트너",
+    "faq": "자주 묻는 질문",
+    "contact": "문의하기"
+  },
+  "home": {
+    "hero": {
+      "title": "Payments Network",
+      "description": "일반 리테일, 소비자, 금융기관이 블록체인 네트워크 상에서 빠르고 안전하게 송금, 결제를 할 수 있도록 지원합니다. 기존의 복잡한 금융망을 하나로 연결하는 KRWIN의 혁신을 경험하세요.",
+      "downloadKo": "[KR] 백서 다운로드",
+      "downloadEn": "[EN] 백서 다운로드",
+      "scrollDown": "다음 섹션으로 스크롤"
+    },
+    "newFinancialSystem": {
+      "title": "새로운 인터넷 기반 금융 시스템을 만들어갑니다.",
+      "description": "KRWIN은 전통 금융과 디지털 자산을 연결하여, 언제 어디서나 이메일처럼 간편하게 돈을 주고받을 수 있는 환경을 제공합니다. 글로벌 비즈니스와 개인 모두에게 새로운 기회를 열어줍니다.",
+      "features": {
+        "realTimeWon": {
+          "title": "실시간 1:1 원화 연동",
+          "description": "항상 1:1로 원화와 연동되어 안정적인 가치 제공"
+        },
+        "transparency": {
+          "title": "투명성",
+          "description": "모든 거래 내역이 블록체인에 기록되어 신뢰성 보장"
+        },
+        "globalTransfer": {
+          "title": "글로벌 송금 지원",
+          "description": "국내외 어디서나 쉽고 빠른 송금 및 결제"
+        },
+        "lowFees": {
+          "title": "빠르고 저렴한 수수료",
+          "description": "복잡한 절차 없이 누구나 저렴하게 이용"
+        }
+      }
+    },
+    "whyKRWIN": {
+      "reliability": {
+        "title": "신뢰성",
+        "description": "국내외 금융 규제에 부합하는 투명한 운영과 1:1 원화 연동"
+      },
+      "innovation": {
+        "title": "혁신성",
+        "description": "블록체인 기반의 빠르고 안전한 거래, 글로벌 확장성"
+      }
+    },
+    "partners": {
+      "title": "함께하는 파트너",
+      "description": "KRWIN은 다양한 글로벌 파트너와 함께 신뢰받는 디지털 금융 생태계를 만들어갑니다.",
+      "updateNotice": "추후 파트너사 업데이트 예정"
+    },
+    "future": {
+      "title": "KR이 만드는 미래",
+      "description": "KRWIN은 혁신과 신뢰를 바탕으로, 모두가 자유롭게 금융을 이용할 수 있는 세상을 만들어갑니다. 지금 KRWIN과 함께 새로운 금융의 패러다임을 경험해보세요."
+    }
+  },
+  "about": {
+    "hero": {
+      "subtitle": "About",
+      "title": "WHY CHOOSE KR",
+      "description": "KRWIN이 Web3 네이티브에게 꼭 선택되어야 하는 이유 : Web3 네이티브 스테이블코인으로서 KRWIN은 투명성, 규제준수, 실사용성, 글로벌 확장성이라는 4가지 핵심 가치를 바탕으로 안전하고 신뢰할 수 있는 디지털 자산 솔루션을 제공합니다."
+    },
+    "companies": {
+      "title": "KR을 만드는 기업들",
+      "subtitle": "각 분야의 전문성을 바탕으로 완벽한 시너지를 만들어냅니다",
+      "initech": {
+        "name": "Initech",
+        "description": "금융 보안 및 인증 전문 기업",
+        "features": [
+          "KYC/AML 인증 시스템 구축",
+          "멀티시그 보안 시스템 제공",
+          "금융 규제 준수 솔루션",
+          "블록체인 보안 전문성"
+        ]
+      },
+      "fanc": {
+        "name": "fanC",
+        "description": "글로벌 K-콘텐츠 플랫폼 전문 기업",
+        "features": [
+          "공연·관광·디지털 콘텐츠 결제 네트워크 제공",
+          "글로벌 K-콘텐츠 플랫폼 운영",
+          "실물경제 연동 결제 솔루션",
+          "K-콘텐츠 생태계 구축"
+        ]
+      }
+    },
+    "coreValues": {
+      "title": "KR의 핵심 가치",
+      "subtitle": "모든 의사결정과 행동의 기준이 되는 4가지 핵심 가치",
+      "features": {
+        "realTimeWon": {
+          "title": "실시간 1:1 원화 연동",
+          "description": "항상 1:1로 원화와 연동되어 안정적인 가치 제공"
+        },
+        "transparency": {
+          "title": "투명성",
+          "description": "모든 거래 내역이 블록체인에 기록되어 신뢰성 보장"
+        },
+        "globalTransfer": {
+          "title": "글로벌 송금 지원",
+          "description": "국내외 어디서나 쉽고 빠른 송금 및 결제"
+        },
+        "lowFees": {
+          "title": "빠르고 저렴한 수수료",
+          "description": "복잡한 절차 없이 누구나 저렴하게 이용"
+        }
+      }
+    },
+    "achievements": {
+      "title": "KR의 성과와 비전",
+      "subtitle": "지속적인 성장과 혁신을 통해 새로운 금융의 미래를 만들어갑니다.",
+      "features": {
+        "realTimeWon": {
+          "title": "실시간 1:1 원화 연동",
+          "description": "항상 1:1로 원화와 연동되어 안정적인 가치 제공"
+        },
+        "transparency": {
+          "title": "투명성",
+          "description": "모든 거래 내역이 블록체인에 기록되어 신뢰성 보장"
+        },
+        "globalTransfer": {
+          "title": "글로벌 송금 지원",
+          "description": "국내외 어디서나 쉽고 빠른 송금 및 결제"
+        }
+      }
+    },
+    "vision": {
+      "title": "KR VISION",
+      "description": "KRWIN은 투명성과 보안성을 최우선 가치로 하여, 글로벌 온체인 환경에서 원화 기반 디지털 자산의 새로운 표준을 제시합니다. FanC의 K-콘텐츠 플랫폼 역량과 Initech의 금융 보안 전문성을 결합하여, 실물경제와 블록체인 기술의 완벽한 융합을 실현합니다."
+    }
+  },
+  "transparency": {
+    "hero": {
+      "subtitle": "Transparency",
+      "title": "투명한 재무 정보 공개",
+      "description": "정기적인 재무 공개와 감사를 통한 완전한 투명성 보장 KRWIN은 투명성을 최우선 가치로 하여 모든 재무 정보를 정기적으로 공개합니다. 월간 재무 보고서, 분기별 자산 현황, 감사된 재무제표를 통해 사용자와 파트너에게 완전한 재무 투명성을 보장합니다.",
+      "checkButton": "실시간 발행정보 확인하기"
+    },
+    "financialData": {
+      "title": "실시간 재무 현황",
+      "subtitle": "투명한 재무 정보를 실시간으로 확인하세요",
+      "collateralAssets": {
+        "label": "담보 자산 규모",
+        "value": "100,000,000",
+        "unit": "KRW"
+      },
+      "issuedStablecoin": {
+        "label": "발행된 KRWIN",
+        "value": "100,000,000",
+        "unit": "KRWIN"
+      },
+      "chart": {
+        "krw": "KRW",
+        "krwin": "KRWIN"
+      }
+    },
+    "issuanceRedemption": {
+      "title": "발행 및 상환",
+      "periods": {
+        "7days": "최근 7일 변화",
+        "30days": "최근 30일 변화",
+        "365days": "최근 365일 변화"
+      },
+      "labels": {
+        "issuance": "발행",
+        "redemption": "상환",
+        "changeInKRWIN": "Change in KRWIN"
+      },
+      "values": {
+        "soon": "SOON",
+        "placeholder": "nnn,nnn,nnn"
+      }
+    }
+  },
+  "technology": {
+    "hero": {
+      "subtitle": "Technology",
+      "title": "Layerzero OFT",
+      "description": "차세대 크로스체인 연동 기술을 통해 블록체인 간의 원활한 통신을 가능하게 하는 프로토콜입니다.",
+      "docsButton": "Layerzero Docs"
+    },
+    "technicalFeatures": {
+      "title": "기술적 특징",
+      "features": {
+        "omnichain": {
+          "description": "Omnichain\n프로토콜로\n모든 블록체인 연결"
+        },
+        "decentralized": {
+          "description": "중앙화된 브리지 없이\n직접 통신"
+        },
+        "security": {
+          "description": "보안성과 확장성을\n동시에 확보"
+        },
+        "efficiency": {
+          "description": "가스 효율적인\n크로스체인 트랜잭션"
+        }
+      }
+    },
+    "coreValues": {
+      "title": "LayerZero의 핵심 가치",
+      "features": {
+        "connectivity": {
+          "title": "연결성",
+          "description": "모든 블록체인을\n하나로 연결하여\n진정한 상호운용성 제공"
+        },
+        "security": {
+          "title": "보안성",
+          "description": "검증된 보안 모델로\n안전한 크로스\n체인 통신"
+        },
+        "efficiency": {
+          "title": "효율성",
+          "description": "최적화된 프로토콜로\n빠르고 경제적인\n트랜잭션"
+        }
+      }
+    }
+  },
+  "footer": {
+    "sections": {
+      "about": {
+        "title": "About",
+        "whyKRWIN": "Why KRWIN",
+        "structure": "발행 및 상환 구조",
+        "company": "회사 소개 (펜시 이니텍)",
+        "partners": "파트너사"
+      },
+      "transparency": {
+        "title": "투명성",
+        "reserves": "실시간 준비금",
+        "custodian": "수탁사 소개",
+        "kyc": "KYC 설명",
+        "audit": "법무법인 감사 보고",
+        "terms": "이용 약관"
+      },
+      "layerzero": {
+        "title": "레이어제로",
+        "technology": "기술 설명",
+        "blockchains": "지원(유통) 블록체인"
+      },
+      "whitepaper": {
+        "title": "백서",
+        "github": "깃허브 첨부"
+      },
+      "ctr": {
+        "title": "발행CTR"
+      },
+      "faq": {
+        "title": "FAQ"
+      }
+    },
+    "contact": {
+      "inquiry": "파트너/제휴 문의:",
+      "email": "biz@krwin.io"
+    },
+    "copyright": "© 2025 KRWIN. 모든 권리 보유.",
+    "disclaimer": "본 사이트의 정보는 투자 권유 목적이 아니며, 정보의 정확성이나 신뢰성에 대해 보장하지 않습니다. 투자 전 반드시 전문가와 상담하십시오."
+  },
+  "common": {
+    "loading": "로딩 중...",
+    "error": "오류가 발생했습니다",
+    "retry": "다시 시도",
+    "cancel": "취소",
+    "confirm": "확인",
+    "save": "저장",
+    "delete": "삭제",
+    "edit": "편집",
+    "close": "닫기"
+  },
+  "languages": {
+    "ko": "한국어",
+    "en": "English"
+  },
+  "popup": {
+    "title": "KRWIN Popup",
+    "description": "KRWIN Popup",
+    "close": "Close",
+    "dontShowToday": "Don't show today"
+  }
+}

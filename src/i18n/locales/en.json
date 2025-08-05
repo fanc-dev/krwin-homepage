@@ -1,0 +1,301 @@
+{
+  "notFound": {
+    "title": "Page Not Found",
+    "subtitle": "Page Not Found",
+    "description": "The page you requested does not exist or may have been moved.",
+    "homeButton": "Go to Home",
+    "backButton": "Go Back",
+    "frequentlyVisited": "Frequently Visited Pages",
+    "about": "About KRWIN",
+    "transparency": "Finance"
+  },
+  "header": {
+    "about": "About",
+    "transparency": "Transparency",
+    "technology": "Technology",
+    "contactUs": "Contact Us",
+    "languageSelection": "Language Selection",
+    "menuOpen": "Open Menu",
+    "menuClose": "Close Menu"
+  },
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "transparency": "Transparency",
+    "technology": "Technology",
+    "partners": "Partners",
+    "faq": "FAQ",
+    "contact": "Contact"
+  },
+  "home": {
+    "hero": {
+      "title": "Payments Network",
+      "description": "We support retail, consumers, and financial institutions to send money and make payments quickly and safely on blockchain networks. Experience KRWIN's innovation that connects existing complex financial networks into one.",
+      "downloadKo": "[KR] Download White Paper",
+      "downloadEn": "[EN] Download White Paper",
+      "scrollDown": "Scroll to next section"
+    },
+    "newFinancialSystem": {
+      "title": "Building a new internet-based financial system.",
+      "description": "KRWIN connects traditional finance and digital assets to provide an environment where money can be sent and received as easily as email, anytime and anywhere. It opens new opportunities for both global businesses and individuals.",
+      "features": {
+        "realTimeWon": {
+          "title": "Real-time 1:1 KRW Peg",
+          "description": "Always pegged 1:1 to Korean Won, providing stable value"
+        },
+        "transparency": {
+          "title": "Transparency",
+          "description": "All transaction records are stored on blockchain, ensuring trust"
+        },
+        "globalTransfer": {
+          "title": "Global Transfer Support",
+          "description": "Easy and fast money transfer and payment anywhere in the world"
+        },
+        "lowFees": {
+          "title": "Fast and Low Fees",
+          "description": "Anyone can use it cheaply without complex procedures"
+        }
+      }
+    },
+    "whyKRWIN": {
+      "reliability": {
+        "title": "Reliability",
+        "description": "Transparent operations compliant with domestic and international financial regulations and 1:1 KRW pegging"
+      },
+      "innovation": {
+        "title": "Innovation",
+        "description": "Fast and secure transactions based on blockchain, global scalability"
+      }
+    },
+    "partners": {
+      "title": "Partners",
+      "description": "KRWIN builds a trusted digital financial ecosystem together with various global partners.",
+      "updateNotice": "Partner updates coming soon"
+    },
+    "future": {
+      "title": "The Future KRWIN Creates",
+      "description": "KRWIN creates a world where everyone can freely use financial services based on innovation and trust. Experience the new paradigm of finance with KRWIN now."
+    }
+  },
+  "about": {
+    "hero": {
+      "subtitle": "About",
+      "title": "WHY CHOOSE KR",
+      "description": "Why KRWIN should be the essential choice for Web3 natives: As a Web3 native stablecoin, KRWIN provides safe and reliable digital asset solutions based on four core values: transparency, regulatory compliance, practical usability, and global scalability."
+    },
+    "companies": {
+      "title": "Companies Building KRWIN",
+      "subtitle": "Creating perfect synergy based on expertise in each field",
+      "initech": {
+        "name": "Initech",
+        "description": "Financial security and authentication specialist company",
+        "features": [
+          "KYC/AML authentication system construction",
+          "Multi-signature security system provision",
+          "Financial regulatory compliance solutions",
+          "Blockchain security expertise"
+        ]
+      },
+      "fanc": {
+        "name": "CELEBe",
+        "description": "Global K-content platform specialist company",
+        "features": [
+          "Performance, tourism, and digital content provision",
+          "Global K-content platform operation",
+          "Real economy-linked payment solutions",
+          "K-content ecosystem construction"
+        ]
+      }
+    },
+    "coreValues": {
+      "title": "KRWIN's Core Values",
+      "subtitle": "Four core values that serve as the foundation for all decision-making and actions",
+      "features": {
+        "realTimeWon": {
+          "title": "Real-time 1:1 KRW Peg",
+          "description": "Always pegged 1:1 to Korean Won, providing stable value"
+        },
+        "transparency": {
+          "title": "Transparency",
+          "description": "All transaction records are stored on blockchain, ensuring trust"
+        },
+        "globalTransfer": {
+          "title": "Global Transfer Support",
+          "description": "Easy and fast money transfer and payment anywhere in the world"
+        },
+        "lowFees": {
+          "title": "Fast and Low Fees",
+          "description": "Anyone can use it cheaply without complex procedures"
+        }
+      }
+    },
+    "achievements": {
+      "title": "KRWIN's Achievements and Vision",
+      "subtitle": "Creating the future of new finance through continuous growth and innovation.",
+      "features": {
+        "realTimeWon": {
+          "title": "Real-time 1:1 KRW Peg",
+          "description": "Always pegged 1:1 to Korean Won, providing stable value"
+        },
+        "transparency": {
+          "title": "Transparency",
+          "description": "All transaction records are stored on blockchain, ensuring trust"
+        },
+        "globalTransfer": {
+          "title": "Global Transfer Support",
+          "description": "Easy and fast money transfer and payment anywhere in the world"
+        }
+      }
+    },
+    "vision": {
+      "title": "KRWIN VISION",
+      "description": "KRWIN prioritizes transparency and security to present a new standard for KRW-based digital assets in the global on-chain environment. By combining FanC's K-content platform capabilities with Initech's financial security expertise, we realize the perfect integration of real economy and blockchain technology."
+    }
+  },
+  "transparency": {
+    "hero": {
+      "subtitle": "Transparency",
+      "title": "Transparent Financial Information Disclosure",
+      "description": "Complete transparency guarantee through regular financial disclosure and audits. KRWIN prioritizes transparency and discloses all financial information regularly. We ensure complete financial transparency to users and partners through monthly financial reports, quarterly asset status, and audited financial statements.",
+      "checkButton": "Check Real-time Issuance Information"
+    },
+    "financialData": {
+      "title": "Real-time Financial Status",
+      "subtitle": "Check transparent financial information in real-time",
+      "collateralAssets": {
+        "label": "Collateral Asset Size",
+        "value": "100,000,000",
+        "unit": "KRW"
+      },
+      "issuedStablecoin": {
+        "label": "Issued KRWIN",
+        "value": "100,000,000",
+        "unit": "KRWIN"
+      },
+      "chart": {
+        "krw": "KRW",
+        "krwin": "KRWIN"
+      }
+    },
+    "issuanceRedemption": {
+      "title": "Issuance and Redemption",
+      "periods": {
+        "7days": "Recent 7-day Change",
+        "30days": "Recent 30-day Change",
+        "365days": "Recent 365-day Change"
+      },
+      "labels": {
+        "issuance": "Issuance",
+        "redemption": "Redemption",
+        "changeInKRWIN": "Change in KRWIN"
+      },
+      "values": {
+        "soon": "SOON",
+        "placeholder": "nnn,nnn,nnn"
+      }
+    }
+  },
+  "technology": {
+    "hero": {
+      "subtitle": "Technology",
+      "title": "Layerzero OFT",
+      "description": "A protocol that enables seamless communication between blockchains through next-generation cross-chain integration technology.",
+      "docsButton": "Layerzero Docs"
+    },
+    "technicalFeatures": {
+      "title": "Technical Features",
+      "features": {
+        "omnichain": {
+          "description": "Omnichain\nprotocol to\nconnect all blockchains"
+        },
+        "decentralized": {
+          "description": "Direct communication\nwithout centralized\nbridges"
+        },
+        "security": {
+          "description": "Ensuring security\nand scalability\nsimultaneously"
+        },
+        "efficiency": {
+          "description": "Gas-efficient\ncross-chain\ntransactions"
+        }
+      }
+    },
+    "coreValues": {
+      "title": "LayerZero's Core Values",
+      "features": {
+        "connectivity": {
+          "title": "Connectivity",
+          "description": "Connecting all\nblockchains into one\nto provide true\ninteroperability"
+        },
+        "security": {
+          "title": "Security",
+          "description": "Safe cross-chain\ncommunication with\nverified security models"
+        },
+        "efficiency": {
+          "title": "Efficiency",
+          "description": "Fast and economical\ntransactions with\noptimized protocols"
+        }
+      }
+    }
+  },
+  "footer": {
+    "sections": {
+      "about": {
+        "title": "About",
+        "whyKRWIN": "Why KRWIN",
+        "structure": "Issuance and Redemption Structure",
+        "company": "Company Introduction (Fanc Initech)",
+        "partners": "Partners"
+      },
+      "transparency": {
+        "title": "Transparency",
+        "reserves": "Real-time Reserves",
+        "custodian": "Custodian Introduction",
+        "kyc": "KYC Explanation",
+        "audit": "Legal Firm Audit Report",
+        "terms": "Terms of Service"
+      },
+      "layerzero": {
+        "title": "LayerZero",
+        "technology": "Technology Explanation",
+        "blockchains": "Supported (Circulation) Blockchains"
+      },
+      "whitepaper": {
+        "title": "White Paper",
+        "github": "GitHub Attachment"
+      },
+      "ctr": {
+        "title": "CTR Issuance"
+      },
+      "faq": {
+        "title": "FAQ"
+      }
+    },
+    "contact": {
+      "inquiry": "Partner/Affiliate Inquiry:",
+      "email": "biz@krwin.io"
+    },
+    "copyright": "© 2025 KRWIN. All rights reserved.",
+    "disclaimer": "The information on this site is not for investment solicitation purposes and does not guarantee the accuracy or reliability of the information. Please consult with experts before investing."
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "retry": "Retry",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "close": "Close"
+  },
+  "languages": {
+    "ko": "한국어",
+    "en": "English"
+  },
+  "popup": {
+    "title": "KRWIN Popup",
+    "description": "KRWIN Popup",
+    "close": "Close",
+    "dontShowToday": "Don't show today"
+  }
+}

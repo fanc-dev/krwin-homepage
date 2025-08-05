@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+# Allow important pages
+Allow: /
+Allow: /about
+Allow: /technology
+Allow: /transparency
+Allow: /whitepaper
+Allow: /faq
+
+# Crawl delay (optional)
+Crawl-delay: 1 
