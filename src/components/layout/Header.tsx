@@ -313,11 +313,17 @@ export default function Header() {
                 </span>
               </div>
               <ul className="flex flex-col gap-2">
-                {menuItems
-                  .filter((item) => item.label !== 'Contact Us')
-                  .map((item) => (
-                    <li key={item.label}>
-                      <>
+                {menuItems.map((item) => (
+                  <li key={item.label}>
+                    <>
+                      {item.label === 'Contact Us' ? (
+                        <button
+                          onClick={handleContactClick}
+                          className="w-full flex items-center justify-between py-3 px-2 text-lg font-semibold text-gray-900 rounded focus:outline-none select-none hover:text-blue-600"
+                        >
+                          <span>{t(`header.${item.label.toLowerCase()}`)}</span>
+                        </button>
+                      ) : (
                         <button
                           className={
                             `w-full flex items-center justify-between py-3 px-2 text-lg font-semibold text-gray-900 rounded focus:outline-none select-none ` +
@@ -336,39 +342,31 @@ export default function Header() {
                           <span>{t(`header.${item.label.toLowerCase()}`)}</span>
                           {item.dropdown && <span className={`ml-2 transition-transform`}>▼</span>}
                         </button>
-                        {item.dropdown && mobileAccordion === item.label && (
-                          <ul className="pl-4 pb-2">
-                            {item.dropdown.groups
-                              .flatMap((group) => group.items)
-                              .map((sub) => (
-                                <li key={sub.label}>
-                                  <Link
-                                    to={sub.to}
-                                    className="block py-2 px-2 text-base text-gray-800 hover:text-blue-600 rounded"
-                                    onClick={() => {
-                                      setMobileOpen(false);
-                                      setMobileAccordion(null);
-                                    }}
-                                  >
-                                    {sub.label}
-                                  </Link>
-                                </li>
-                              ))}
-                          </ul>
-                        )}
-                      </>
-                    </li>
-                  ))}
+                      )}
+                      {item.dropdown && mobileAccordion === item.label && (
+                        <ul className="pl-4 pb-2">
+                          {item.dropdown.groups
+                            .flatMap((group) => group.items)
+                            .map((sub) => (
+                              <li key={sub.label}>
+                                <Link
+                                  to={sub.to}
+                                  className="block py-2 px-2 text-base text-gray-800 hover:text-blue-600 rounded"
+                                  onClick={() => {
+                                    setMobileOpen(false);
+                                    setMobileAccordion(null);
+                                  }}
+                                >
+                                  {sub.label}
+                                </Link>
+                              </li>
+                            ))}
+                        </ul>
+                      )}
+                    </>
+                  </li>
+                ))}
               </ul>
-
-              <div className="mt-auto pt-8">
-                <button
-                  onClick={handleContactClick}
-                  className="block w-full text-center px-4 py-3 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition font-semibold"
-                >
-                  {t('header.contactUs')}
-                </button>
-              </div>
             </div>
             <div className="flex-1" onClick={() => setMobileOpen(false)} />
           </div>

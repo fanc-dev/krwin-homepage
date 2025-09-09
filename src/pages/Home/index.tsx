@@ -347,6 +347,27 @@ export default function Home() {
             {t('home.future.description')}
           </p>
         </section>
+
+        <section id="contact" className="pt-20 py-30 text-center">
+          <h2 className="text-lg sm:text-2xl md:text-3xl font-bold text-black mb-2 md:mb-4">
+            {i18n.language === 'ko' ? (
+              <>
+                KR
+                <span className="text-[#005BAC]">WIN</span>이 만드는 미래
+              </>
+            ) : (
+              <>Contact Us</>
+            )}
+          </h2>
+          <p className="text-gray-600 text-sm sm:text-lg md:text-xl lg:text-lg max-w-xs sm:max-w-md md:max-w-3xl mx-auto">
+            Have questions or interested in a partnership? <br />
+            Please contact us at the email below, and our team will <br />
+            follow up.
+          </p>
+          <p className="pt-4 text-gray-600 text-sm sm:text-lg md:text-xl lg:text-lg max-w-xs sm:max-w-md md:max-w-3xl mx-auto">
+            contact@krwin.io
+          </p>
+        </section>
       </div>
     </>
   );
