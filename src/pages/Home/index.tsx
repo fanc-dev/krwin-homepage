@@ -344,11 +344,15 @@ export default function Home() {
             )}
           </h2>
           <p className="text-gray-600 text-sm sm:text-lg md:text-xl lg:text-lg max-w-xs sm:max-w-md md:max-w-3xl mx-auto">
-            {t('home.future.description')}
+            Focused on on‑chain payments and settlement, starting
+            <br />
+            with real usage in the K‑content ecosystem and
+            <br />
+            expanding payment access for visitors to Korea.
           </p>
         </section>
 
-        <section id="contact" className="pt-20 py-30 text-center">
+        <section id="contact" className="pt-12 py-30 text-center">
           <h2 className="text-lg sm:text-2xl md:text-3xl font-bold text-black mb-2 md:mb-4">
             {i18n.language === 'ko' ? (
               <>
