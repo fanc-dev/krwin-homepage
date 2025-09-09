@@ -13,7 +13,7 @@
     "about": "About",
     "transparency": "Transparency",
     "technology": "Technology",
-    "contactUs": "Contact Us",
+    "contact us": "Contact Us",
     "languageSelection": "Language Selection",
     "menuOpen": "Open Menu",
     "menuClose": "Close Menu"
@@ -275,7 +275,7 @@
       "email": "biz@krwin.io"
     },
     "copyright": "© 2025 KRWIN. All rights reserved.",
-    "disclaimer": "The information on this site is not for investment solicitation purposes and does not guarantee the accuracy or reliability of the information. Please consult with experts before investing."
+    "disclaimer": "The information on this site is not for investment solicitation purposes and no representation or warranty is made as to the accuracy or reliability of any content. Please consult independent experts before making any investment decisions. Access to the services described on this website may be restricted by laws and regulations in certain jurisdictions, and applicable legal requirements may prevent certain visitors from being solicited or offered such services. The content is for informational purposes for eligible customers and does not constitute an offer or solicitation in any jurisdiction where prohibited. If you choose to access this website, you do so at your own initiative and risk and acknowledge that the services described herein are intended to be offered only to eligible customers."
   },
   "common": {
     "loading": "Loading...",
