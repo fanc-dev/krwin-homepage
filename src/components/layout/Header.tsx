@@ -213,7 +213,7 @@ export default function Header() {
                   >
                     {t(`header.${item.label.toLowerCase()}`)}
                   </button>
-                ) : (
+                ) : item.to ? (
                   <Link
                     to={item.to}
                     className={
@@ -224,6 +224,16 @@ export default function Header() {
                   >
                     {t(`header.${item.label.toLowerCase()}`)}
                   </Link>
+                ) : (
+                  <span
+                    className={
+                      `font-medium px-2 py-1 inline-block transition-colors ` +
+                      (hoveredIdx === null ? 'text-black' : hoveredIdx === idx ? 'text-black' : 'text-gray-400') +
+                      ' hover:text-black cursor-pointer'
+                    }
+                  >
+                    {t(`header.${item.label.toLowerCase()}`)}
+                  </span>
                 )}
                 {/* About 메뉴: 그룹화 + 아이콘 + 이미지 드롭다운 */}
                 {item.dropdown && hoveredIdx === idx && (
