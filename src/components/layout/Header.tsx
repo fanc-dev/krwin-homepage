@@ -10,7 +10,7 @@ import koreanIcon from '@/assets/icons/korean.png';
 
 interface MenuItem {
   label: string;
-  to: string;
+  to?: string;
   columns: number;
   dropdown?: {
     groups: Array<{
@@ -47,6 +47,10 @@ const menuItems: MenuItem[] = [
   {
     label: 'Technology',
     to: '/technology',
+    columns: 1,
+  },
+  {
+    label: 'Contact Us',
     columns: 1,
   },
 ];
@@ -118,6 +122,19 @@ export default function Header() {
       setIsChangingLanguage(false);
     }
   };
+
+  const handleContactClick = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      const elementTop = contactSection.getBoundingClientRect().top + window.pageYOffset;
+      const offset = 100;
+      window.scrollTo({
+        top: elementTop - offset,
+        behavior: 'smooth',
+      });
+    }
+    setMobileOpen(false);
+  };
   // @ts-ignore
   const currentLanguageData = languages.find((lang) => lang.code === currentLanguage);
 
@@ -167,6 +184,17 @@ export default function Header() {
                   >
                     {t(`header.${item.label.toLowerCase()}`)}
                   </span>
+                ) : item.label === 'Contact Us' ? (
+                  <button
+                    onClick={handleContactClick}
+                    className={
+                      `font-medium px-2 py-1 inline-block transition-colors ` +
+                      (hoveredIdx === null ? 'text-black' : hoveredIdx === idx ? 'text-black' : 'text-gray-400') +
+                      ' hover:text-black cursor-pointer'
+                    }
+                  >
+                    {t(`header.${item.label.toLowerCase()}`)}
+                  </button>
                 ) : (
                   <Link
                     to={item.to}
@@ -285,58 +313,61 @@ export default function Header() {
                 </span>
               </div>
               <ul className="flex flex-col gap-2">
-                {menuItems.map((item) => (
-                  <li key={item.label}>
-                    <>
-                      <button
-                        className={
-                          `w-full flex items-center justify-between py-3 px-2 text-lg font-semibold text-gray-900 rounded focus:outline-none select-none ` +
-                          (item.dropdown ? 'cursor-default' : 'hover:text-blue-600')
-                        }
-                        onClick={() => {
-                          navigate(item.to);
-                          setMobileOpen(false);
-                        }}
-                        aria-expanded={undefined}
-                        disabled={false}
-                        tabIndex={0}
-                      >
-                        <span>{t(`header.${item.label.toLowerCase()}`)}</span>
-                        {item.dropdown && <span className={`ml-2 transition-transform`}>▼</span>}
-                      </button>
-                      {item.dropdown && mobileAccordion === item.label && (
-                        <ul className="pl-4 pb-2">
-                          {item.dropdown.groups
-                            .flatMap((group) => group.items)
-                            .map((sub) => (
-                              <li key={sub.label}>
-                                <Link
-                                  to={sub.to}
-                                  className="block py-2 px-2 text-base text-gray-800 hover:text-blue-600 rounded"
-                                  onClick={() => {
-                                    setMobileOpen(false);
-                                    setMobileAccordion(null);
-                                  }}
-                                >
-                                  {sub.label}
-                                </Link>
-                              </li>
-                            ))}
-                        </ul>
-                      )}
-                    </>
-                  </li>
-                ))}
+                {menuItems
+                  .filter((item) => item.label !== 'Contact Us')
+                  .map((item) => (
+                    <li key={item.label}>
+                      <>
+                        <button
+                          className={
+                            `w-full flex items-center justify-between py-3 px-2 text-lg font-semibold text-gray-900 rounded focus:outline-none select-none ` +
+                            (item.dropdown ? 'cursor-default' : 'hover:text-blue-600')
+                          }
+                          onClick={() => {
+                            if (item.to) {
+                              navigate(item.to);
+                            }
+                            setMobileOpen(false);
+                          }}
+                          aria-expanded={undefined}
+                          disabled={false}
+                          tabIndex={0}
+                        >
+                          <span>{t(`header.${item.label.toLowerCase()}`)}</span>
+                          {item.dropdown && <span className={`ml-2 transition-transform`}>▼</span>}
+                        </button>
+                        {item.dropdown && mobileAccordion === item.label && (
+                          <ul className="pl-4 pb-2">
+                            {item.dropdown.groups
+                              .flatMap((group) => group.items)
+                              .map((sub) => (
+                                <li key={sub.label}>
+                                  <Link
+                                    to={sub.to}
+                                    className="block py-2 px-2 text-base text-gray-800 hover:text-blue-600 rounded"
+                                    onClick={() => {
+                                      setMobileOpen(false);
+                                      setMobileAccordion(null);
+                                    }}
+                                  >
+                                    {sub.label}
+                                  </Link>
+                                </li>
+                              ))}
+                          </ul>
+                        )}
+                      </>
+                    </li>
+                  ))}
               </ul>
 
               <div className="mt-auto pt-8">
-                <Link
-                  to="#contact"
+                <button
+                  onClick={handleContactClick}
                   className="block w-full text-center px-4 py-3 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition font-semibold"
-                  onClick={() => setMobileOpen(false)}
                 >
                   {t('header.contactUs')}
-                </Link>
+                </button>
               </div>
             </div>
             <div className="flex-1" onClick={() => setMobileOpen(false)} />
