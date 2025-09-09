@@ -124,14 +124,32 @@ export default function Header() {
   };
 
   const handleContactClick = () => {
-    const contactSection = document.getElementById('contact');
-    if (contactSection) {
-      const elementTop = contactSection.getBoundingClientRect().top + window.pageYOffset;
-      const offset = 100;
-      window.scrollTo({
-        top: elementTop - offset,
-        behavior: 'smooth',
-      });
+    // 현재 경로가 홈페이지가 아니면 홈페이지로 이동
+    if (location.pathname !== '/') {
+      navigate('/');
+      // 홈페이지로 이동한 후 스크롤을 위해 약간의 지연
+      setTimeout(() => {
+        const contactSection = document.getElementById('contact');
+        if (contactSection) {
+          const elementTop = contactSection.getBoundingClientRect().top + window.pageYOffset;
+          const offset = 100;
+          window.scrollTo({
+            top: elementTop - offset,
+            behavior: 'smooth',
+          });
+        }
+      }, 100);
+    } else {
+      // 이미 홈페이지에 있으면 바로 스크롤
+      const contactSection = document.getElementById('contact');
+      if (contactSection) {
+        const elementTop = contactSection.getBoundingClientRect().top + window.pageYOffset;
+        const offset = 100;
+        window.scrollTo({
+          top: elementTop - offset,
+          behavior: 'smooth',
+        });
+      }
     }
     setMobileOpen(false);
   };
