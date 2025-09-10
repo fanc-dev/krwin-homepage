@@ -1,0 +1,39 @@
+name: Deploy Vite App to EC2
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Setup SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.EC2_SSH_KEY }}" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          ssh-keyscan -H ${{ secrets.EC2_HOST }} >> ~/.ssh/known_hosts
+
+      - name: Deploy on EC2
+        run: |
+          ssh -i ~/.ssh/id_ed25519 ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} << 'EOF'
+          set -e
+          APP_DIR="${EC2_PATH:-/home/ubuntu/apps/krwin-homepage}"
+
+          cd "$APP_DIR"
+
+          # 최신 코드 가져오기
+          git fetch --all
+          git checkout main
+          git pull origin main
+
+          # 패키지 설치 & 빌드
+          yarn install --frozen-lockfile
+          yarn build
+
+          # dist → Nginx 폴더로 반영 (추후 Nginx 설정 후 동작)
+          sudo mkdir -p /var/www/krwin-homepage/html
+          sudo rsync -av --delete dist/ /var/www/krwin-homepage/html/
+          EOF
