@@ -368,7 +368,7 @@ export default function Home() {
             Please contact us at the email below, and our team will <br />
             follow up.
           </p>
-          <p className="pt-4 text-red-500 text-sm sm:text-lg md:text-xl lg:text-lg max-w-xs sm:max-w-md md:max-w-3xl mx-auto">
+          <p className="pt-4 text-gray-600 text-sm sm:text-lg md:text-xl lg:text-lg max-w-xs sm:max-w-md md:max-w-3xl mx-auto">
             contact@krwin.io
           </p>
         </section>
